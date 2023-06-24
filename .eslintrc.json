@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "parser": "@typescript-eslint/parser",
   "extends": [
@@ -25,7 +26,8 @@
         "allowTemplateLiterals": true
       }
     ],
-    "@typescript-eslint/space-before-function-paren": "off"
+    "@typescript-eslint/space-before-function-paren": "off",
+    "react/react-in-jsx-scope": "off"
   },
   "settings": {
     "react": {

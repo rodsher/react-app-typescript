@@ -49,10 +49,23 @@ How to install all required packages to enable ESLint and Prettier in VSCode edi
 npm init @eslint/config
 ```
 
+### Override Typescript
+
+It's helpful to avoid conflict `ERESOLVE could not resolve` while installing dependencies. Add to package.json the following section:
+
+```json
+{
+  ...
+  "overrides": {
+    "typescript": "^5.1.3"
+  }
+}
+```
+
 ### Install Prettier
 
 ```bash
-npm install --save-dev --save-exact prettier
+npm install eslint-config-prettier eslint-plugin-prettier prettier --save-dev
 ```
 
 ### Add scripts to the `package.json`
